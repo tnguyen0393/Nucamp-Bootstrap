@@ -28,9 +28,44 @@
       </div>
     </header>
 
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <div class="container">
+        <!-- Button below is for collapsable button for smaller viewport-->
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nucampNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Hidden button stuff above. it will target the navbar between the div below.-->
+
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+          <ul class="navbar-nav">
+            <!-- .nav-item and .nav-link just helps with the appearance. we add the .active to the item that corresponds with our current page -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Sites</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
+      <!-- Added another row wihin the container, and the row will have 1 col for the bread crumb -->
       <div class="row">
         <div class="col">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">About</li>
+          </ol>
           <h2>About Us</h2>
           <hr />
         </div>

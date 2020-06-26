@@ -10,8 +10,8 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
     />
 
     <title>NuCamp: A Better Way To Camp</title>
@@ -29,6 +29,37 @@
       </div>
     </header>
 
+    <!-- .navbar navbar-expand-sm + navbar-nav classes combined used to expand horizontally for small and up viewports. .navbar-dark will help provide contrast to the text for dark backgrounds. .sticky-top will keep the navigation bar to the top-->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <div class="container">
+        <!-- Button below is for collapsable button for smaller viewport-->
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nucampNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Hidden button stuff above. it will target the navbar between the div below.-->
+
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+          <ul class="navbar-nav">
+            <!-- .nav-item and .nav-link just helps with the appearance. we add the .active to the item that corresponds with our current page -->
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Sites</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
@@ -44,7 +75,7 @@
       </div>
 
       <div class="row row-content align-items-center">
-        <div class="col-sm-4 col-md-3 order-sm-last col-md-3">
+        <div class="col-sm-4 col-md-3 col-md-3">
           <h2>Featured Campsites</h2>
         </div>
         <div class="col">
@@ -76,8 +107,8 @@
           <div class="col-4 col-sm-2 offset-1">
             <h5>Links</h5>
             <ul class="list-unstyled">
-              <li><a href="./aboutus.html">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="./aboutus.html">About</a></li>
               <li><a href="#">Sites</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
